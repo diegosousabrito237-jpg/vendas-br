@@ -142,3 +142,79 @@
 
 </body>
 </html>
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>ShopFi • Admin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      background:#0b0f17;
+      color:#e8eefc;
+    }
+    .box{
+      max-width:900px;
+      margin:auto;
+      padding:20px;
+    }
+    input, button{
+      width:100%;
+      padding:10px;
+      margin:6px 0;
+      border-radius:8px;
+      border:1px solid #23314d;
+      background:#0e1626;
+      color:#fff;
+    }
+    button{
+      background:#3b82f6;
+      cursor:pointer;
+      font-weight:bold;
+    }
+    .card{
+      background:#121a29;
+      border:1px solid #23314d;
+      border-radius:14px;
+      padding:14px;
+      margin-top:20px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="box">
+
+<h2>Login Admin</h2>
+
+<div id="login">
+  <input id="email" placeholder="E-mail">
+  <input id="senha" type="password" placeholder="Senha">
+  <button id="btnLogin">Entrar</button>
+</div>
+
+<div id="painel" style="display:none">
+  <h3>Novo produto</h3>
+
+  <input id="titulo" placeholder="Título">
+  <input id="categoria" placeholder="Categoria">
+  <input id="preco" placeholder="Preço">
+  <input id="loja" placeholder="Loja">
+  <input id="imagem" placeholder="URL da imagem">
+  <input id="link" placeholder="Link afiliado">
+
+  <button id="salvar">Salvar</button>
+
+  <div id="lista" class="card"></div>
+
+  <button id="sair" style="background:#ef4444">Sair</button>
+</div>
+
+</div>
+
+<script type="module" src="admin.js"></script>
+</body>
+</html>
